@@ -1,7 +1,7 @@
 ![image](https://user-images.githubusercontent.com/99811402/170723615-36853ee3-aca6-4dff-bdda-99f77f1c7a40.png)
 # W3school-Mainpage-Clone
 
-A frontend's clone of the W3school's homepage.
+A clone of the W3school homepage frontend.
 
 PD: This project only focuses on the homepage of W3shool, so all the links on the page refer to the original w3school's pages.
 
