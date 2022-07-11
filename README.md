@@ -30,6 +30,6 @@ PD: This project only focuses on the homepage of W3shool, so all the links on th
 
 ## Contact
 
-![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/max-daniel-garcia-sanchez-b9658a224/)
 
 
