@@ -63,7 +63,7 @@ body{
 .examplecontainer {
     display: flex;
     background-color: var(--grayconsole);
-    margin: 40px;
+    margin: 6%;
     box-shadow: -1px 1px 5px 2px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 16px;
@@ -140,8 +140,13 @@ body{
     font-family: Consolas, sans-serif;
 }
 
+.tag::after {
+    content: ">";
+    color: mediumblue;
+    font-family: Consolas, sans-serif;
+}
+
 .dark-code .tag::before, .dark-code .tag::after {
-    content: "<";
     color: #88c999;
     font-family: Consolas, sans-serif;
 }
@@ -450,6 +455,48 @@ body{
     position: relative;
     z-index: -2;
 }
+
+@media screen and (max-width: 1250px) {
+    .newrounded{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #topvideosbtn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    #topprobtn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 993px) {
+    #paidbtn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    #websitebtn {
+        display: none;
+    }
+
+    .leftbtn-wrapper:not(.main){
+        display: none;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .main {
+        display: none;
+    }
+}
+
+
 
 /*#########        FIRST SEC        #########*/
 
@@ -975,13 +1022,13 @@ body{
 #giftop input {
     background-color: white;
     border: 0px;
-    width: 590px;
+    width: 63%;
     padding: 2px 5px;
     font-size: 14px;
     font-family: var(--fontsans);
     font-weight: 600;
-    margin-top: -7px;
-    margin-left: 125px;
+    margin-top: -5px;
+    margin-left: 13.5%;
     border-radius: 2px;
 }
 
@@ -1079,6 +1126,10 @@ body{
 
 #spaces #content a:hover {
     background-color: var(--hovergreen);
+}
+
+#spaces #content img {
+    width: 100%;
 }
 
 /*#########        COLORPICKER SEC      #########*/
@@ -1240,7 +1291,7 @@ body{
 }
 
 #templates img {
-    width: 980px;
+    width: 75%;
     height: auto;
     margin: 16px 0px 20px;
 }

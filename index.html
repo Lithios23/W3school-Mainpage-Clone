@@ -3,7 +3,7 @@
 
 <head>
     <title>W3Schools Online Web Tutorials</title>
-    <meta name="viewport" width="device-width initial-scale=1">
+    <meta name="viewport" content="width=device-width initial-scale=1">
     <meta charset="utf-8">
     <script src="https://kit.fontawesome.com/1d0d69ddce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css-w3s.css">
@@ -293,11 +293,81 @@
                     </div>
                 </div>
             </div>
-            <a href="https://www.w3schools.com/videos/index.php" class="leftbtn sansbtns">Videos</a>
-            <a href="https://www.w3schools.com/pro/index.php" class="leftbtn sansbtns new">
+            <a href="https://www.w3schools.com/videos/index.php" class="leftbtn sansbtns" id="topvideosbtn">Videos</a>
+            <a href="https://www.w3schools.com/pro/index.php" class="leftbtn sansbtns new" id="topprobtn">
                 Pro
                 <span class="newrounded">NEW</span>
             </a>
+            <div class="leftbtn-wrapper main">
+                <button class="leftbtn sansbtns dropdown_btn" onclick="topleft_btn_activator('references')">
+                    Main
+                    <img src="icons/downarrow.svg" alt="down">
+                </button>
+                <div class="dropdown-content">
+                    <button onclick="topleft_btn_activator('references')">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div>
+                        <h2 class="content-title">References</h2>
+                        <div class="content-section">
+                            <div class="content-column">
+                                <h3>HTML</h3>
+                                <a href="https://www.w3schools.com/tags/default.asp">HTML Tag Reference</a>
+                                <a href="https://www.w3schools.com/tags/ref_html_browsersupport.asp">HTML Browser Support</a>
+                                <a href="https://www.w3schools.com/tags/ref_eventattributes.asp">HTML Event Reference</a>
+                                <a href="https://www.w3schools.com/colors/default.asp">HTML Color Reference</a>
+                                <a href="https://www.w3schools.com/tags/ref_attributes.asp">HTML Attribute Reference</a>
+                                <a href="https://www.w3schools.com/tags/ref_canvas.asp">HTML Canvas Reference</a>
+                                <a href="https://www.w3schools.com/graphics/svg_reference.asp">HTML SVG Reference</a>
+                                <a href="https://www.w3schools.com/graphics/google_maps_reference.asp">Google Maps Reference</a>
+                                <h3>CSS</h3>
+                                <a href="https://www.w3schools.com/cssref/default.asp">CSS Reference</a>
+                                <a href="https://www.w3schools.com/cssref/css3_browsersupport.asp">CSS Browser Support</a>
+                                <a href="https://www.w3schools.com/cssref/css_selectors.asp">CSS Selector Reference</a>
+                                <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp">Bootstrap 3 Reference</a>
+                                <a href="https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp">Bootstrap 4 Reference</a>
+                                <a href="https://www.w3schools.com/w3css/w3css_references.asp">W3.CSS Reference</a>
+                                <a href="https://www.w3schools.com/icons/icons_reference.asp">Icon Reference</a>
+                                <a href="https://www.w3schools.com/sass/sass_functions_string.php">Sass Reference</a>
+                            </div>
+                            <div class="content-column">
+                                <h3>JavaScript</h3>
+                                <a href="https://www.w3schools.com/jsref/default.asp">JavaScript Reference</a>
+                                <a href="https://www.w3schools.com/jsref/default.asp">HTML DOM Reference</a>
+                                <a href="https://www.w3schools.com/jquery/jquery_ref_overview.asp">jQuery Reference</a>
+                                <a href="https://www.w3schools.com/angular/angular_ref_directives.asp">AngularJS Reference</a>
+                                <a href="https://www.w3schools.com/appml/appml_reference.asp">AppML Reference</a>
+                                <a href="https://www.w3schools.com/w3js/w3js_references.asp">W3.JS Reference</a>
+                                <h3>Programming</h3>
+                                <a href="https://www.w3schools.com/python/python_reference.asp">Python Reference</a>
+                                <a href="https://www.w3schools.com/java/java_ref_keywords.asp">Java Reference</a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Server Side</h3>
+                                <a href="https://www.w3schools.com/sql/sql_ref_keywords.asp">SQL Reference</a>
+                                <a href="https://www.w3schools.com/mysql/mysql_ref_functions.asp">MySQL Reference</a>
+                                <a href="https://www.w3schools.com/php/php_ref_overview.asp">PHP Reference</a>
+                                <a href="https://www.w3schools.com/asp/asp_ref_response.asp">ASP Reference</a>
+                                <h3>XML</h3>
+                                <a href="https://www.w3schools.com/xml/dom_nodetype.asp">XML DOM Reference</a>
+                                <a href="https://www.w3schools.com/xml/dom_http.asp">XML Http Reference</a>
+                                <a href="https://www.w3schools.com/xml/xsl_elementref.asp">XSLT Reference</a>
+                                <a href="https://www.w3schools.com/xml/schema_elements_ref.asp">XML Schema Reference</a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Character Sets</h3>
+                                <a href="https://www.w3schools.com/charsets/default.asp">HTML Character Sets</a>
+                                <a href="https://www.w3schools.com/charsets/ref_html_ascii.asp">HTML ASCII</a>
+                                <a href="https://www.w3schools.com/charsets/ref_html_ansi.asp">HTML ANSI</a>
+                                <a href="https://www.w3schools.com/charsets/ref_html_ansi.asp">HTML Windows-1252</a>
+                                <a href="https://www.w3schools.com/charsets/ref_html_8859.asp">HTML ISO-8859-1</a>
+                                <a href="https://www.w3schools.com/charsets/ref_html_symbols.asp">HTML Symbols</a>
+                                <a href="https://www.w3schools.com/charsets/ref_html_utf8.asp">HTML UTF-8</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="topright">
             <div id="topicons">
@@ -447,7 +517,7 @@
         <div id="sql">
             <div id="sqltext">
                 <h1>SQL</h1>
-                <p>A language for accesing databases</p>
+                <p>A language for accessing databases</p>
                 <a href="https://www.w3schools.com/sql/default.asp" class="bodybuttons sansbtns" id="sqllearn">Learn SQL</a>
                 <a href="https://www.w3schools.com/sql/sql_ref_keywords.asp" class="bodybuttons sansbtns" id="sqlreference">SQL Reference</a>
             </div>
